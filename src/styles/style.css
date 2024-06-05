@@ -145,6 +145,7 @@ p{
     width: 100px;
 }
 .tecnologias-logos-itens{
+    background-color: transparent;
     margin: 2rem;
     transition: 1s;
 }
