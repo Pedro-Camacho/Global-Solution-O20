@@ -40,8 +40,10 @@ p{
     font-size: 15px;
 }
 
-/* cabecalho */
 
+
+
+/* cabecalho */
 .cabecalho{
     position: fixed;
     top: 0;
@@ -101,15 +103,22 @@ p{
 }
 
 
+
+
 /* sessões */
 .sessao{
     display: flex;
-    height: 100vh;
+    height: 90vh;
     background-color: var(--bgColor);
     padding: 1rem;
 }
 
+
+
+
+/* SESSÃO SOLUÇÃO */
 #solucao{
+    height: 100vh;
     background-image: url(../img/tartaruga.jpg);
     background-size: cover;
 }
@@ -117,6 +126,33 @@ p{
     margin: 5rem;
     width: 50%;
 }
+
+/* SESSAO TECNOLOGIAS */
+#tecnologias{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.tecnologias-text{
+    margin: 3rem;
+}
+.tecnologias-logos{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.tecnologias-logos img{
+    width: 100px;
+}
+.tecnologias-logos-itens{
+    background-color: transparent;
+    margin: 2rem;
+    transition: 1s;
+}
+.tecnologias-logos-itens:hover{
+    transform: scale(1.2);
+}
+
 
 /* rodape */
 .rodape{
