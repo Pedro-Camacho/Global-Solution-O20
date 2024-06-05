@@ -89,10 +89,16 @@ a, a:visited, a:link , a:active{
 
 
 /* sessões */
-.sessao{
-    padding-top: 5%;
-    background-color: var(--bgColor);
+.container{
+    margin: 5rem 0.5rem;
 }
+.sessao{
+    background-color: var(--bgColor);
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    margin: 20px 0;
+}
+
 
 /* rodape */
 .rodape{
