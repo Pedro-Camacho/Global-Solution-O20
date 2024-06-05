@@ -102,9 +102,6 @@ p{
 
 
 /* sessões */
-.container{
-    /* margin: 5rem 0px; */
-}
 .sessao{
     display: flex;
     height: 100vh;
