@@ -7,11 +7,11 @@ window.addEventListener('scroll', () =>{
     header.classList.toggle('animado', window.scrollY > 0)
 })
 
-document.getElementById('radio-objetivo1').checked = true
+// document.getElementById('radio-objetivo1').checked = true
 
-setInterval(() =>{
-    proximo()
-}, 5000)
+// setInterval(() =>{
+//     proximo()
+// }, 5000)
 
 // function proximo(){
 //     if (document.getElementById(`radio-objetivo1`).checked){
