@@ -15,7 +15,6 @@
     --secondColor: #b4c5ef;
     --acentColor:#f9627d;
     --bgColor: #120309;
-    --navbarColor: #171614;
 }
 
 ::selection{
@@ -63,7 +62,7 @@ p{
 }
 .animado{
     padding: 1.5rem;
-    background-color: var(--navbarColor);
+    background-color: var(--bgColor);
     box-shadow: 0 5px 20px rgba(68, 68, 68, 0.267);
 }
 
@@ -129,6 +128,7 @@ p{
 
 /* SESSAO TECNOLOGIAS */
 #tecnologias{
+    height: auto;
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -137,14 +137,18 @@ p{
     margin: 3rem;
 }
 .tecnologias-logos{
+    height: 70%;
     display: flex;
     justify-content: center;
+    align-items: center;
     flex-wrap: wrap;
+    margin: 3;
 }
 .tecnologias-logos img{
-    width: 100px;
+    width: 40%;
 }
 .tecnologias-logos-itens{
+    width: 25%;
     background-color: transparent;
     margin: 2rem;
     transition: 1s;
@@ -153,10 +157,49 @@ p{
     transform: scale(1.2);
 }
 
+/* SESSAO OBJETIVOS */
+
+#objetivos{
+    background-color: var(--textColor);
+    color: var(--bgColor);
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.carrosel{
+    margin: 5rem 0px;
+    overflow: hidden;
+}
+
+.carrosel-content{
+    width: 300vw;
+    display: flex;
+    flex-direction: row;
+}
+.carroselBox{
+    width: 100vw;
+    position: relative;
+    text-align: center;
+    transition: 1s;
+}
+
+
+
+/* SESSÃO PUBLICO ALVO */
+#publicoAlvo{
+    background-color: var(--acentColor);
+}
+
+
+/* SESSÃO NA PRATICA */
+#naPratica{
+    background-color: var(--textColor);
+    color: var(--bgColor);
+}
 
 /* rodape */
 .rodape{
-    margin-top: 1rem;
     width: 100%;
     height: 5rem;
     
@@ -165,6 +208,7 @@ p{
     align-items: center;
 
     color: var(--bgColor);
-    background-color: var(--textColor);
+    background-color: var(--secondColor);
 }
+
 
