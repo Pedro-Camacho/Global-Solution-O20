@@ -35,6 +35,12 @@ h2{
     font-weight: 800;
     line-height: 1.6em;
 }
+h3{
+    color: var(--acentColor);
+    font-size: 25px;
+    font-weight: 600;
+    line-height: 2em;
+}
 p{
     font-size: 15px;
 }
@@ -102,8 +108,6 @@ p{
 }
 
 
-
-
 /* sessões */
 .sessao{
     display: flex;
@@ -111,8 +115,6 @@ p{
     background-color: var(--bgColor);
     padding: 1rem;
 }
-
-
 
 
 /* SESSÃO SOLUÇÃO */
@@ -125,6 +127,9 @@ p{
     margin: 5rem;
     width: 50%;
 }
+
+
+
 
 /* SESSAO TECNOLOGIAS */
 #tecnologias{
@@ -157,8 +162,9 @@ p{
     transform: scale(1.2);
 }
 
-/* SESSAO OBJETIVOS */
 
+
+/* SESSAO OBJETIVOS */
 #objetivos{
     padding: 0;
     background-color: var(--textColor);
@@ -176,10 +182,12 @@ p{
 .carrosel{
     margin: 2rem 0rem 5rem 0rem;
     overflow: hidden;
+    height: 80%;
 }
 
 .carrosel-content{
     width: 300vw;
+    height: 80%;
     display: flex;
     flex-direction: row;
     transition: 1s;
@@ -194,13 +202,6 @@ p{
 .carroselBox article{
     width: 80%;
 }
-#radio1:checked ~ .primeiro{
-    margin: 0;
-}
-
-#radio1:checked ~ .primeiro{
-    margin: 0;
-}
 
 
 
@@ -209,11 +210,51 @@ p{
     background-color: var(--acentColor);
 }
 
+
+
+
+
+
 /* SESSÃO BENEFICIOS */
 #beneficios{
     background-color: var(--textColor);
     color: var(--bgColor);
+    
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
 }
+.beneficios-text{
+    margin-top: 2rem;
+}
+.beneficios-content{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: 60%;
+    margin: 2rem;
+    align-items: center;
+}
+.beneficios-box{
+    height: 300px;
+    width: 300px;
+    border: 1px solid var(--bgColor);
+    border-radius: 20px;
+
+    margin: 1rem;
+    padding: 1rem;
+
+    transition: 1s;
+}
+
+.beneficios-box:hover{
+    transform: scale(1.05);
+}
+
+
+
 
 /* SESSÃO NA PRATICA */
 #naPratica{
@@ -226,6 +267,8 @@ p{
 .naPratica-text{
     margin-top: 2rem;
 }
+
+
 
 
 /* rodape */
