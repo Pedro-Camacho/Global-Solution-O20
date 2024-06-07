@@ -7,29 +7,27 @@ window.addEventListener('scroll', () =>{
     header.classList.toggle('animado', window.scrollY > 0)
 })
 
-// document.getElementById('radio-objetivo1').checked = true
+document.getElementById('radio-objetivo1').checked = true
 
-// setInterval(() =>{
-//     proximo()
-// }, 5000)
+setInterval(() =>{
+    proximo()
+}, 5000)
 
-// function proximo(){
-//     if (document.getElementById(`radio-objetivo1`).checked){
-//         contProximo  = 2
-//         visivel.style.marginLeft = '-32.8%';
-//     }
+function proximo(){
+    if (document.getElementById(`radio-objetivo1`).checked){
+        contProximo  = 2
+        visivel.style.marginLeft = '-32.8%';
+    }
     
-//     if (document.getElementById(`radio-objetivo2`).checked){
-//         contProximo  = 3
-//         visivel.style.marginLeft = '-65,6%';
-//     }
+    if (document.getElementById(`radio-objetivo2`).checked){
+        contProximo  = 3
+        visivel.style.marginLeft = '-65,6%';
+    }
 
-//     if (document.getElementById(`radio-objetivo3`).checked){
-//         contProximo  = 1
-//         visivel.style.marginLeft = '0%';
-//     }
-//     console.log(contProximo, margin)
-
-
-//     document.getElementById(`radio-objetivo${contProximo}`).checked = true
-// }
+    if (document.getElementById(`radio-objetivo3`).checked){
+        contProximo  = 1
+        visivel.style.marginLeft = '0%';
+    }
+    console.log(contProximo, margin)
+    document.getElementById(`radio-objetivo${contProximo}`).checked = true
+}
