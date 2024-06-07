@@ -102,8 +102,6 @@ p{
 }
 
 
-
-
 /* sessões */
 .sessao{
     display: flex;
@@ -111,8 +109,6 @@ p{
     background-color: var(--bgColor);
     padding: 1rem;
 }
-
-
 
 
 /* SESSÃO SOLUÇÃO */
@@ -125,6 +121,9 @@ p{
     margin: 5rem;
     width: 50%;
 }
+
+
+
 
 /* SESSAO TECNOLOGIAS */
 #tecnologias{
@@ -157,8 +156,9 @@ p{
     transform: scale(1.2);
 }
 
-/* SESSAO OBJETIVOS */
 
+
+/* SESSAO OBJETIVOS */
 #objetivos{
     padding: 0;
     background-color: var(--textColor);
@@ -209,11 +209,29 @@ p{
     background-color: var(--acentColor);
 }
 
+
+
+
+
+
 /* SESSÃO BENEFICIOS */
 #beneficios{
     background-color: var(--textColor);
     color: var(--bgColor);
+
+    display: flex;
+    flex-direction: column;
+    text-align: center;
 }
+.beneficios-text{
+    margin-top: 2rem;
+}
+
+
+
+
+
+
 
 /* SESSÃO NA PRATICA */
 #naPratica{
@@ -226,6 +244,8 @@ p{
 .naPratica-text{
     margin-top: 2rem;
 }
+
+
 
 
 /* rodape */
