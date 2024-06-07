@@ -24,27 +24,56 @@ function mudarCarrosel(nome){
     carrosel.style.transform = `translateX(-${(cont - 1)*100}vw)`
 }
 
-let inputRadio1 = document.querySelector("#objetivo-radio1")
-let inputRadio2= document.querySelector("#objetivo-radio2")
-let inputRadio3 = document.querySelector("#objetivo-radio3")
+let ObjetivoRadio1 = document.querySelector("#objetivo-radio1")
+let ObjetivoRadio2 = document.querySelector("#objetivo-radio2")
+let ObjetivoRadio3 = document.querySelector("#objetivo-radio3")
 
-function checando_1(){
-    if(inputRadio1.checked == true){        
-        carrosel.style.transform = `translateX(-0vw)`
+let naPraticaRadio1 = document.querySelector("#naPratica-radio1")
+let naPraticaRadio2 = document.querySelector("#naPratica-radio2")
+let naPraticaRadio3 = document.querySelector("#naPratica-radio3")
+
+let carroselObjetivo = document.querySelector(`.carrosel-objetivo`)
+let carroselNaPratica = document.querySelector(`.carrosel-naPratica`)
+
+function ObjetivoChecando_1(){
+    if(ObjetivoRadio1.checked == true){        
+        carroselObjetivo.style.transform = `translateX(-0vw)`
     }
 }
-function checando_2(){
-    if(inputRadio2.checked == true){
-        carrosel.style.transform = `translateX(-100vw)`
+function ObjetivoChecando_2(){
+    if(ObjetivoRadio2.checked == true){
+        carroselObjetivo.style.transform = `translateX(-100vw)`
     }
 }
-function checando_3(){
-    if(inputRadio3.checked == true){        
-        carrosel.style.transform = `translateX(-200vw)`
+function ObjetivoChecando_3(){
+    if(ObjetivoRadio3.checked == true){        
+        carroselObjetivo.style.transform = `translateX(-200vw)`
+    }
+}
+
+
+
+function naPraticaChecando_1(){
+    if(naPraticaRadio1.checked == true){      
+        carroselNaPratica.style.transform = `translateX(-0vw)`
+    }
+}
+function naPraticaChecando_2(){
+    if(naPraticaRadio2.checked == true){
+        carroselNaPratica.style.transform = `translateX(-100vw)`
+    }
+}
+function naPraticaChecando_3(){
+    if(naPraticaRadio2.checked == true){        
+        carroselNaPratica.style.transform = `translateX(-200vw)`
     }
 }
 setInterval(()=>{
-    checando_1()
-    checando_2()
-    checando_3()
+    ObjetivoChecando_1()
+    ObjetivoChecando_2()
+    ObjetivoChecando_3()
+
+    naPraticaChecando_1()
+    naPraticaChecando_2()
+    naPraticaChecando_3()
 },100)
