@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="/src/styles/reset.css">
     <link rel="stylesheet" href="/src/styles/style.css">
     <script src="src/js/script.js" defer></script>
+    <script src="src/js/crud.js" defer></script>
 </head>
 
 <body>
@@ -147,7 +148,24 @@
         <section class="sessao" id="naPratica">
             <article class="naPratica-text">
                 <h2>NA PRATICA</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis perspiciatis architecto excepturi iste illo earum. Nulla necessitatibus nisi ipsum fuga. Provident voluptatibus quaerat voluptate. </p>
+                <div class="colecao">
+                    <form class="insercao">
+                        <p>Nome do Registrador</p>
+                        <input type="text" placeholder="digite o seu nome" id="nomeUsuario">
+                        <p>Data</p>
+                        <input type="text" placeholder="dd/mm/aaaa" id="dataReg">
+                        <p>Temperatura</p>
+                        <input type="text" placeholder="insira a temperatura..." id="tempReg">
+                        <p>Ph</p>
+                        <input type="text" placeholder="insira o Ph" id="phReg">
+                        <p>Turbidez</p>
+                        <input type="text" placeholder="insira o nivel de turbidez" id="turbReg">
+                        <button id="btnRegistra">Registrar</button>
+                    </form>
+                    <ul id="lista-dados">
+
+                    </ul>
+                </div>
             </article>
         </section>
     </main>
