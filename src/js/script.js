@@ -31,7 +31,6 @@ let inputRadio3 = document.querySelector("#objetivo-radio3")
 function checando_1(){
     if(inputRadio1.checked == true){        
         carrosel.style.transform = `translateX(-0vw)`
-        console.log("passei aqui e não funcionei")
     }
 }
 function checando_2(){
