@@ -231,15 +231,15 @@ p{
 .beneficios-content{
     display: flex;
     justify-content: center;
+    flex-direction: row;
     flex-wrap: wrap;
     height: 60%;
     margin: 2rem;
     align-items: center;
 }
 .beneficios-box{
-    width: 25%;
-    height: 200px;
-
+    height: 300px;
+    width: 300px;
     border: 1px solid var(--bgColor);
     border-radius: 20px;
 
