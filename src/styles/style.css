@@ -15,7 +15,6 @@
     --secondColor: #b4c5ef;
     --acentColor:#f9627d;
     --bgColor: #120309;
-    --navbarColor: #171614;
 }
 
 ::selection{
@@ -63,7 +62,7 @@ p{
 }
 .animado{
     padding: 1.5rem;
-    background-color: var(--navbarColor);
+    background-color: var(--bgColor);
     box-shadow: 0 5px 20px rgba(68, 68, 68, 0.267);
 }
 
@@ -129,6 +128,7 @@ p{
 
 /* SESSAO TECNOLOGIAS */
 #tecnologias{
+    height: auto;
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -137,14 +137,18 @@ p{
     margin: 3rem;
 }
 .tecnologias-logos{
+    height: 70%;
     display: flex;
     justify-content: center;
+    align-items: center;
     flex-wrap: wrap;
+    margin: 3;
 }
 .tecnologias-logos img{
-    width: 100px;
+    width: 40%;
 }
 .tecnologias-logos-itens{
+    width: 25%;
     background-color: transparent;
     margin: 2rem;
     transition: 1s;
@@ -153,10 +157,70 @@ p{
     transform: scale(1.2);
 }
 
+/* SESSAO OBJETIVOS */
+
+#objetivos{
+    padding: 0;
+    height: auto;
+    background-color: var(--textColor);
+    color: var(--bgColor);
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.objetivos-text{
+    margin-top: 2rem;
+}
+
+.carrosel{
+    margin: 2rem 0rem 5rem 0rem;
+    overflow: hidden;
+}
+
+.carrosel-content{
+    width: 300vw;
+    display: flex;
+    flex-direction: row;
+    transition: 1s;
+}
+.carroselBox{
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    position: relative;
+    text-align: center;
+}
+.carroselBox article{
+    width: 80%;
+}
+#radio1:checked ~ .primeiro{
+    margin: 0;
+}
+
+#radio1:checked ~ .primeiro{
+    margin: 0;
+}
+
+
+
+/* SESSÃO PUBLICO ALVO */
+#publicoAlvo{
+    background-color: var(--acentColor);
+}
+
+/* SESSÃO BENEFICIOS */
+#beneficios{
+    background-color: var(--textColor);
+    color: var(--bgColor);
+}
+
+/* SESSÃO NA PRATICA */
+#naPratica{
+    background-color: var(--secondColor);
+}
 
 /* rodape */
 .rodape{
-    margin-top: 1rem;
     width: 100%;
     height: 5rem;
     
@@ -164,7 +228,8 @@ p{
     justify-content: center;
     align-items: center;
 
-    color: var(--bgColor);
-    background-color: var(--textColor);
+    color: var(--textColor);
+    background-color: var(--bgColor);
 }
+
 
