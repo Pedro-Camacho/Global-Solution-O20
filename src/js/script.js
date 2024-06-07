@@ -1,39 +1,34 @@
-let contProximo = 1
-var visivel = document.querySelector('.visivel')
-let margin = 0
-
-
-
 let inputRadio1 = document.querySelector("#radio-objetivo1")
 let inputRadio2= document.querySelector("#radio-objetivo2")
 let inputRadio3 = document.querySelector("#radio-objetivo3")
 
 //usúario escrola a tela e aparece o header animado
+
+
 window.addEventListener('scroll', () =>{
     const header = document.querySelector('header')
     header.classList.toggle('animado', window.scrollY > 0)
 })
 
-//faz o input radio 1 checkado com load
-document.getElementById('radio-objetivo1').checked = true
+
+
+
+
+
+let carrosel = document.querySelector('.carrosel-content')
+let cont= 1
 
 function proximo(){
-    if (document.getElementById(`radio-objetivo1`).checked){
-        contProximo  = 2
-        visivel.style.marginLeft = '-32.8%';
+    cont++
+    if (cont > 3){
+        cont = 1
     }
-   
-    if (document.getElementById(`radio-objetivo2`).checked){
-        contProximo  = 3
-        visivel.style.marginLeft = '-65,6%';
-    }
+    mudarCarrosel('objetivo')
+}
 
-    if (document.getElementById(`radio-objetivo3`).checked){
-        contProximo  = 1
-        visivel.style.marginLeft = '0%';
-    }
-    console.log(contProximo, margin)
-    document.getElementById(`radio-objetivo${contProximo}`).checked = true
+function mudarCarrosel(nome){
+    document.getElementById(`${nome}-radio${cont}`).checked = true
+    carrosel.style.transform = `translateX(-${(cont - 1)*100}vw)`
 }
 //tentado deixar selecionado
 
