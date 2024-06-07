@@ -7,16 +7,18 @@
     scroll-behavior: smooth;
 }
 
+
 /* configurações padrões */
 :root{
-    --textColor: #211b15;
+    --textColor: #F5F5F5;
     --mainColor: #1916dd;
-    --secondColor: #b91515;
-    --bgColor: #fff;
+    --secondColor: #b4c5ef;
+    --acentColor:#f9627d;
+    --bgColor: #120309;
 }
 
 ::selection{
-    background-color: var(--bgColor);
+    background-color: transparent;
     color: var(--mainColor);
 }
 body{
@@ -28,14 +30,25 @@ a, a:visited, a:link , a:active{
     text-decoration: none;
 }
 
-/* cabecalho */
+h2{
+    font-size: 45px;
+    font-weight: 800;
+    line-height: 1.6em;
+}
+p{
+    font-size: 15px;
+}
 
+
+
+
+/* cabecalho */
 .cabecalho{
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    height: 5%;
+    height: 4vh;
     z-index: 100;
 
     display: flex;
@@ -43,13 +56,14 @@ a, a:visited, a:link , a:active{
     justify-content:space-around;
     align-items: center;
     
-    padding: 1.5rem;
+    padding: 1rem;
     background-color: transparent;   
     transition: 0.5s;
 }
 .animado{
+    padding: 1.5rem;
     background-color: var(--bgColor);
-    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.267);
+    box-shadow: 0 5px 20px rgba(68, 68, 68, 0.267);
 }
 
 .navbar{
@@ -88,15 +102,104 @@ a, a:visited, a:link , a:active{
 }
 
 
+
+
 /* sessões */
 .sessao{
-    padding-top: 5%;
+    display: flex;
+    height: 90vh;
     background-color: var(--bgColor);
+    padding: 1rem;
+}
+
+
+
+
+/* SESSÃO SOLUÇÃO */
+#solucao{
+    height: 100vh;
+    background-image: url(../img/tartaruga.jpg);
+    background-size: cover;
+}
+.solucao-text{
+    margin: 5rem;
+    width: 50%;
+}
+
+/* SESSAO TECNOLOGIAS */
+#tecnologias{
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.tecnologias-text{
+    margin: 3rem;
+}
+.tecnologias-logos{
+    height: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 3;
+}
+.tecnologias-logos img{
+    width: 40%;
+}
+.tecnologias-logos-itens{
+    width: 25%;
+    background-color: transparent;
+    margin: 2rem;
+    transition: 1s;
+}
+.tecnologias-logos-itens:hover{
+    transform: scale(1.2);
+}
+
+/* SESSAO OBJETIVOS */
+
+#objetivos{
+    background-color: var(--textColor);
+    color: var(--bgColor);
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.carrosel{
+    margin: 5rem 0px;
+    overflow: hidden;
+}
+
+.carrosel-content{
+    width: 300vw;
+    display: flex;
+    flex-direction: row;
+}
+.carroselBox{
+    width: 100vw;
+    position: relative;
+    text-align: center;
+    transition: 1s;
+}
+
+
+
+/* SESSÃO PUBLICO ALVO */
+#publicoAlvo{
+    background-color: var(--acentColor);
+}
+
+
+/* SESSÃO NA PRATICA */
+#naPratica{
+    background-color: var(--textColor);
+    color: var(--bgColor);
 }
 
 /* rodape */
 .rodape{
-    margin-top: 1rem;
     width: 100%;
     height: 5rem;
     
@@ -105,6 +208,7 @@ a, a:visited, a:link , a:active{
     align-items: center;
 
     color: var(--bgColor);
-    background-color: var(--textColor);
+    background-color: var(--secondColor);
 }
+
 
