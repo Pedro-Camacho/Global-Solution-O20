@@ -39,19 +39,19 @@ function proximo(){
 
 function checando_1(){
     if(inputRadio1.checked == true){        
-        contProximo = 2
+        
         visivel.style.marginLeft = '0%';        
     }
 }
 function checando_2(){
     if(inputRadio2.checked == true){
-        contProximo = 3
+        
         visivel.style.marginLeft = '-32.8%';
     }
 }
 function checando_3(){
     if(inputRadio3.checked == true){
-        contProximo = 1
+        
         visivel.style.marginLeft = '-65,6%';
     }
 }
