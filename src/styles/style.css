@@ -161,7 +161,6 @@ p{
 
 #objetivos{
     padding: 0;
-    height: auto;
     background-color: var(--textColor);
     color: var(--bgColor);
     display: flex;
@@ -172,6 +171,8 @@ p{
     margin-top: 2rem;
 }
 
+
+/* CARROSEL */
 .carrosel{
     margin: 2rem 0rem 5rem 0rem;
     overflow: hidden;
@@ -217,7 +218,15 @@ p{
 /* SESSÃO NA PRATICA */
 #naPratica{
     background-color: var(--secondColor);
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
 }
+.naPratica-text{
+    margin-top: 2rem;
+}
+
 
 /* rodape */
 .rodape{
