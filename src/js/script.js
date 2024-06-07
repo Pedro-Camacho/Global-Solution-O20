@@ -1,22 +1,18 @@
 let inputRadio1 = document.querySelector("#radio-objetivo1")
 let inputRadio2= document.querySelector("#radio-objetivo2")
 let inputRadio3 = document.querySelector("#radio-objetivo3")
-
-//usúario escrola a tela e aparece o header animado
-
-
 window.addEventListener('scroll', () =>{
     const header = document.querySelector('header')
     header.classList.toggle('animado', window.scrollY > 0)
 })
 
 
-
-
-
-
 let carrosel = document.querySelector('.carrosel-content')
 let cont= 1
+
+setInterval(() =>{
+    proximo()
+}, 5000)
 
 function proximo(){
     cont++
@@ -55,9 +51,3 @@ setInterval(()=>{
     checando_2()
     checando_3()
 },100)
-
-//gira o carrossel a cada 5 segundos
-setInterval(() =>{
-    proximo()
-}, 5000)
-
