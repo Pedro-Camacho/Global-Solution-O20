@@ -288,8 +288,9 @@ p{
 
 /* SESSÃO NA PRATICA */
 #naPratica{
+    height: auto;
     background-color: var(--secondColor);
-    padding: 0;
+    padding: 2rem;
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -298,22 +299,15 @@ p{
     margin-top: 2rem;
 }
 
-
-
-
 .colecao{
-    display: block;
-    margin-left: 10rem;
-    margin-top: 2rem;
-    width: 80rem;
-    height: 40rem;
-    background-color: #1916dd;
+    
 }
+
 .insercao{
-    display: flex;
-    flex-wrap: nowrap;
-    padding: 40px;
+
 }
+
+
 /* rodape */
 .rodape{
     width: 100%;
