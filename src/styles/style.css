@@ -288,6 +288,7 @@ p{
 
 /* SESSÃO NA PRATICA */
 #naPratica{
+    min-height: 90vh;
     height: auto;
     background-color: var(--secondColor);
     padding: 2rem;
@@ -297,14 +298,6 @@ p{
 }
 .naPratica-text{
     margin-top: 2rem;
-}
-
-.colecao{
-    
-}
-
-.insercao{
-
 }
 
 
