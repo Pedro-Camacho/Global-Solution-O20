@@ -3,6 +3,10 @@
 ## Visão Geral
 Projeto seguindo os padrões de uma one page visa fornecer informações de maneira prática aos usuários, automatizando processos de coleta e análise de dados e promovendo a conscientização sobre o meio aquático.
 
+## Membros
+Diógenes Henrique do Santos Costa rm: 559127
+Pedro Almeida e Camacho rm: 556831
+
 ## Seções
 ### SOLUÇÃO:
 Buscando trazer informação ao usuario de maneira prática e buscando automatizar o processo de coleta de dados e analise dos mesmos. Utilizando sistemas embargados podemos criar um robo para realizar a coleta de dados e interpretação delas e assim, gerar a manutenção e consciencia sobre o meio aquatico
