@@ -4,8 +4,8 @@
 Projeto seguindo os padrões de uma one page visa fornecer informações de maneira prática aos usuários, automatizando processos de coleta e análise de dados e promovendo a conscientização sobre o meio aquático.
 
 ## Membros
-Diógenes Henrique do Santos Costa rm: 559127
-Pedro Almeida e Camacho rm: 556831
+- Diógenes Henrique do Santos Costa rm: 559127
+- Pedro Almeida e Camacho rm: 556831
 
 ## Sessões
 A nossa pagina unica foi dividida nas seguintes sessões
