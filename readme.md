@@ -1,4 +1,4 @@
-# Projeto Aquático
+# BlueCode
 
 ## Visão Geral
 Projeto seguindo os padrões de uma one page visa fornecer informações de maneira prática aos usuários, automatizando processos de coleta e análise de dados e promovendo a conscientização sobre o meio aquático.
