@@ -3,16 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Global Solution</title>
+    <title>BlueCode</title>
     <link rel="stylesheet" href="/src/styles/reset.css">
     <link rel="stylesheet" href="/src/styles/style.css">
     <script src="src/js/script.js" defer></script>
+    <script src="src/js/crud.js" defer></script>
 </head>
 
 <body>
     <header class="cabecalho">
         <div class="logo">
-            <span>GLOBAL SOLUTION</span>
+            <span>BlueCode</span>
         </div>
         <nav>
             <ul class="navbar">
@@ -30,8 +31,8 @@
         <section class="sessao" id="solucao">
             <article class="solucao-text">
                 <h2>NOSSA SOLUÇÃO</h2>
-                <p>Buscando trazer informação ao úsuario de maneira prática e buscando automatizar o processo de coleta de dados e analise dos mesmos. </p>
-                <p>Utilizando sistemas embargados podemos criar um robo para realizar a coleta de dados e interpretação delas, assi</p>
+                <p>Buscando trazer informação ao usuario de maneira prática e buscando automatizar o processo de coleta de dados e analise dos mesmos. </p>
+                <p>Utilizando sistemas embargados podemos criar um robo para realizar a coleta de dados e interpretação delas e assim, gerar a manutenção e consciencia sobre o meio aquatico</p>
             </article>
         </section>
 
@@ -62,64 +63,118 @@
         <section class="sessao" id="objetivos">
             <article class="objetivos-text">
                 <h2>OBJETIVOS</h2>
-                <h3>O principal objetivo da nossa proposta é ajudar o público tanto da pesca quanto dos pesquisadores, trazendo informações de maneira automatizada e direta ao úsuario. </h3>
+                <p>O principal objetivo da nossa proposta é ajudar o público tanto da pesca quanto dos pesquisadores, trazendo informações de maneira automatizada e direta ao úsuario. </p>
             </article>
             <div class="carrosel">
-                <div class="carrosel-content">
-                    <div class="carroselBox primeiro">
+                <div class="carrosel-content carrosel-objetivo">
+                    <div class="carroselBox">
                         <article>
-                            <h2>Web dev</h2>
+                            <h3>Web dev</h3>
                             <p>No momento estamos trabalhando com um crud básico para inserir os dados coletados pelo Arduino, atualmente ainda é necessário que um úsuario busque as informações coletadas e as registre em nosso site, registrando em uma forma de lista com data, nome de úsuario e os dados de analize </p>
                         </article>
                     </div>
 
                     <div class="carroselBox">
                         <article>
-                            <h2>Python</h2>
-                            <p>Utilizando o python buscaremos processar esses dados plotalos e assim retornar para o usuario as informações devidas</p>
+                            <h3>Python</h3>
+                            <p>Usando Python, é possível processar e analisar os dados coletados dos pescadores e pesquisadores marinhos, identificando padrões e tendências relevantes. Essas informações podem ser visualizadas através de plots. fornecendo insights valiosos para orientar a tomada de decisão e ações tanto dos pescadores tanto no estudo dos padrões oceânicos e da vida marinha</p>
                         </article>
                     </div>
 
                     <div class="carroselBox">
                         <article>
-                            <h2>Arduino</h2>
-                            <p>O Arduino será nosso coração do projeto com ele construiremos um sistema embarcado que funcionara como um barco automatico, realizando a coleta dos dados da água</p>
+                            <h3>Arduino</h3>
+                            <p>O Arduino será o centro vital do nosso projeto, pois será utilizado para desenvolver um sistema embarcado que operará como um barco autônomo, responsável pela coleta automatizada e precisa dos dados ambientais da água, desempenhando um papel crucial na eficiência e na qualidade das informações obtidas.</p>
                         </article>
                     </div>
                 </div>
 
-                <input type="radio" name="objetivo-carrosel-btn" id="radio-objetivo1" class="input-radio">
-                <input type="radio" name="objetivo-carrosel-btn" id="radio-objetivo2" class="input-radio">
-                <input type="radio" name="objetivo-carrosel-btn" id="radio-objetivo3" class="input-radio">
+                <input type="radio" name="objetivo-carrosel-btn" id="objetivo-radio1" class="input-radio">
+                <input type="radio" name="objetivo-carrosel-btn" id="objetivo-radio2" class="input-radio">
+                <input type="radio" name="objetivo-carrosel-btn" id="objetivo-radio3" class="input-radio">
 
             </div>
 
         </section>
 
         <section class="sessao" id="publicoAlvo">
-            <article class="publicoAlvo-text">
-                <h2>PUBLICO ALVO</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis perspiciatis architecto excepturi iste illo earum. Nulla necessitatibus nisi ipsum fuga. Provident voluptatibus quaerat voluptate. </p>
-            </article>
+            <h2>PUBLICO ALVO</h2>
+            <div class="publicoAlvo-content">
+                <article class="publicoAlvo-text">
+                    <p>O projeto tem como público-alvo tanto os pescadores, que podem se beneficiar das informações para melhorar suas atividades e garantir a sustentabilidade dos recursos marinhos, quanto os pesquisadores especializados em estudos oceânicos, que podem utilizar os dados para aprofundar suas pesquisas e contribuir para o conhecimento científico sobre o oceano. </p>
+                </article>
+                <figure>
+                    <img src="/src/img/Barco.jpg" alt="pescadores em um barco">
+                </figure>
+            </div>
+            
+
         </section>
 
         <section class="sessao" id="beneficios">
             <article class="beneficios-text">
                 <h2>BENEFICIOS</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis perspiciatis architecto excepturi iste illo earum. Nulla necessitatibus nisi ipsum fuga. Provident voluptatibus quaerat voluptate. </p>
             </article>
+            <div class="beneficios-content">
+                <div class="beneficios-box">
+                    <article>
+                        <h3>Sustentabilidade Pesqueira</h3>
+                        <p>Os pescadores podem utilizar os dados para entender padrões de migração de peixes, prever mudanças nas populações e adotar práticas de pesca sustentáveis, contribuindo para a preservação dos recursos marinhos</p>
+                    </article>
+                </div>
+                <div class="beneficios-box">
+                    <article>
+                        <h3>Eficiência Operacional</h3>
+                        <p>Com informações em tempo real sobre condições oceânicas, como temperatura da água, correntes e níveis de nutrientes, os pescadores podem otimizar suas rotas de pesca e aumentar a eficiência das suas operações</p>
+                    </article>
+                </div>
+                <div class="beneficios-box">
+                    <article>
+                        <h3>Pesquisa Científica Avançada</h3>
+                        <p>Os pescadores podem utilizar os dados para entender padrões de migração de peixes, prever mudanças nas populações e adotar práticas de pesca sustentáveis, contribuindo para a preservação dos recursos marinhos</p>
+                    </article>
+                </div>
+                <div class="beneficios-box">
+                    <article>
+                        <h3>Redução de Impactos Ambientais</h3>
+                        <p>Os pescadores podem utilizar os dados para entender padrões de migração de peixes, prever mudanças nas populações e adotar práticas de pesca sustentáveis, contribuindo para a preservação dos recursos marinhos</p>
+
+                    </article>
+                </div>
+            </div>
+
         </section>
 
         <section class="sessao" id="naPratica">
-            <article class="naPratica-text">
-                <h2>NA PRATICA</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis perspiciatis architecto excepturi iste illo earum. Nulla necessitatibus nisi ipsum fuga. Provident voluptatibus quaerat voluptate. </p>
-            </article>
+            <h2>NA PRATICA</h2>
+            <div class="colecao">
+                <form class="insercao">
+
+                    <label>Nome do Registrador</label>
+                    <input type="text" placeholder="digite o seu nome" id="nomeUsuario">
+                    
+                    <label>Data</label>
+                    <input type="text" placeholder="dd/mm/aaaa" id="dataReg">
+                    
+                    <label>Temperatura</label>
+                    <input type="text" placeholder="insira a temperatura..." id="tempReg">
+                    
+                    <label>Ph</label>
+                    <input type="text" placeholder="insira o Ph" id="phReg">
+                    
+                    <label>Turbidez</label>
+                    <input type="text" placeholder="insira o nivel de turbidez" id="turbReg">
+                    <button id="btnRegistra">Registrar</button>
+                </form>
+                <ul id="lista-dados">
+
+                </ul>
+            </div>
         </section>
     </main>
     
     <footer class="rodape">
-        &copy;GLOBAL SOLUTION
+        &copy;BlueCode
     </footer>
 </body>
 </html>
