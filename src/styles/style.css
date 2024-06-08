@@ -37,12 +37,13 @@ h2{
 }
 h3{
     color: var(--acentColor);
-    font-size: 25px;
+    font-size: 35px;
     font-weight: 600;
-    line-height: 2em;
+    line-height: 1.2em;
 }
 p{
-    font-size: 15px;
+    font-size: 25px;
+    line-height: 1.5em;
 }
 
 
@@ -197,6 +198,7 @@ p{
     justify-content: center;
     width: 100vw;
     position: relative;
+    align-items: center;
     text-align: center;
 }
 .carroselBox article{
@@ -207,9 +209,35 @@ p{
 
 /* SESSÃO PUBLICO ALVO */
 #publicoAlvo{
+    display: block;
     background-color: var(--acentColor);
+    height: auto;
 }
-
+.publicoAlvo-content{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.publicoAlvo-text{
+    margin: 5rem;
+    text-align: center;
+    width: 40%;
+}
+.publicoAlvo-text p{
+    font-size: 35px;
+}
+#publicoAlvo figure{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#publicoAlvo img{
+    width: 60%;
+    border: 20px solid var(--textColor);
+    border-radius: 20px;
+}
 
 
 
@@ -238,8 +266,8 @@ p{
     align-items: center;
 }
 .beneficios-box{
-    height: 300px;
-    width: 300px;
+    width: 350px;
+    height: 550px;
     border: 1px solid var(--bgColor);
     border-radius: 20px;
 
@@ -248,7 +276,9 @@ p{
 
     transition: 1s;
 }
-
+.beneficios h3{
+    font-size: 45px;
+}
 .beneficios-box:hover{
     transform: scale(1.05);
 }
